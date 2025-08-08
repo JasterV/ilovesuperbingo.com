@@ -1,8 +1,16 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import backgroundImage from "@assets/background.jpg";
+import backgroundImage from "@assets/superbingo.jpeg";
 ---
 
 <Layout title="Home" backgroundImage={backgroundImage}>
-  <p>Site in progress...</p>
+  <p class="fancy-text">Site in progress...</p>
 </Layout>
+
+<style>
+  .fancy-text {
+    font-family: "PinyonScript", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+  }
+</style>
