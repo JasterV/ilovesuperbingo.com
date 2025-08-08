@@ -1,0 +1,34 @@
+:root {
+  --text-color: white;
+  --text-color-light: #657b83;
+  --link-color: #9ca0ed;
+  --link-hover-color: #cccfff;
+  --font-size-m: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
