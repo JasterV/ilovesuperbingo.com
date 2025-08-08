@@ -1,7 +1,7 @@
 ---
 import type { ImageMetadata } from "astro";
 import { getImage } from "astro:assets";
-import "@styles/global.scss";
+import "@styles/global.css";
 
 interface Props {
   title: string;
@@ -52,7 +52,11 @@ const backgroundImageUrl = `url('${optimizedBgImage.src}')`;
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: calc(100vh - 1rem);
+    min-height: 100vh;
+  }
+
+  main {
+    flex: 1;
   }
 
   footer {
@@ -61,6 +65,7 @@ const backgroundImageUrl = `url('${optimizedBgImage.src}')`;
     display: flex;
     flex-direction: column;
     padding-top: 1rem;
+    padding-bottom: 1rem;
     margin-top: auto;
     gap: 0.5rem;
   }
