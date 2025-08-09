@@ -1,5 +1,7 @@
 ---
 import "@styles/global.css";
+import snoopyWalking from "@assets/snoopy.png";
+import { Image } from "astro:assets";
 
 interface Props {
   title: string;
@@ -24,6 +26,7 @@ const { title } = Astro.props;
     </main>
 
     <footer>
+      <Image src={snoopyWalking} width="100" alt="Snoopy walking" />
       <p>© 2025 Super Bingo. All Rights Reserved.</p>
     </footer>
   </body>
@@ -43,13 +46,13 @@ const { title } = Astro.props;
   }
 
   footer {
-    font-size: 1rem;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    padding-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
     padding-bottom: 1rem;
-    margin-top: auto;
-    gap: 0.5rem;
+    gap: 1rem;
   }
 </style>
