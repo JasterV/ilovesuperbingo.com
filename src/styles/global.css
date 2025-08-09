@@ -19,7 +19,7 @@
 /* Normal */
 :root {
   --text-color: white;
-  --font-size-m: 18px;
+  --bg-color: black;
 }
 
 * {
